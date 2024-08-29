@@ -1,13 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+    selector: 'app-about',
+    standalone: true,
+    imports: [RouterOutlet, CommonModule, FormsModule],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.css'
 })
-export class AppComponent {
-  title = 'safelock';
+export class AboutComponent {
+    title = 'safelock';
 }

@@ -1,7 +1,14 @@
+import { Route, Routes } from 'react-router-dom';
+import HomePage from "./pages/HomePage";
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <>
-      <h1>SafeLock</h1>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={ <HomePage /> } />
+      </Routes>
     </>
   )
 }

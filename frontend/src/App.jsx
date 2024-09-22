@@ -1,14 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage";
-import Navbar from './components/Navbar';
+import { Box } from '@chakra-ui/react';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={ <HomePage /> } />
-      </Routes>
+      {/* <Navbar /> */}
+      <Box bg={'#E0CFB6'}>
+        <Routes>
+          <Route path="/" element={ <HomePage /> } />
+        </Routes>
+      </Box>
     </>
   )
 }

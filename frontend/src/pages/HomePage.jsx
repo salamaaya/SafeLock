@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Button, HStack, VStack, Center, Heading, Text, Box} from '@chakra-ui/react';
+import { Flex, Button, HStack, VStack, Center, Heading, Text, Box, Image} from '@chakra-ui/react';
 import GreenButton from '../components/GreenButton';
 
 const HomePage = () => {
@@ -8,11 +8,7 @@ const HomePage = () => {
         <Center>
             <VStack m={20}>
                 <Heading>
-                    Safe
-                </Heading>
-
-                <Heading>
-                     Lock
+                    <img src="SafeLock-logo.png" alt="SafeLock"></img>
                 </Heading>
 
                 <HStack spacing={8}>

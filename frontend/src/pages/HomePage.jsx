@@ -1,19 +1,29 @@
 import React from "react";
-import { Flex, VStack, Center, Heading, Text, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  VStack,
+  Center,
+  Heading,
+  Text,
+  Box,
+  HStack,
+} from "@chakra-ui/react";
 import FormButton from "../components/FormButton";
 
 const HomePage = () => {
   return (
+    <Box bgImg={"lock-bg-3x.png"} bgSize={"cover"} bgPos={"top"} bgRepeat={"no-repeat"}>
     <Flex width={"100vw"} height={"100vh"} justifyContent={"center"}>
       <Center>
-        <VStack m={0}>
-          <Heading>
-            <Image src="SafeLock-logo.png" alt="SafeLock"></Image>
+        <VStack >
+          <Heading pb={10}>
+            <img src="SafeLock-logo.png" alt="SafeLock"></img>
           </Heading>
 
-          <FormButton text={"signup"} form={"signup"} />
-
-          <FormButton text={"signin"} form={"signin"} />
+          <HStack spacing={4}>
+            <FormButton text={"sign up"} form={"signup"} />
+            <FormButton text={"sign in"} form={"signin"} />
+          </HStack>
 
           <Box justifyContent={"center"}>
             <Text
@@ -21,6 +31,8 @@ const HomePage = () => {
               fontSize={"l"}
               color={"#AE4F4D"}
               align={"center"}
+              noOfLines={5}
+              
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               hic quia laudantium pariatur ullam tempora, autem doloribus,
@@ -31,6 +43,7 @@ const HomePage = () => {
         </VStack>
       </Center>
     </Flex>
+    </Box>
   );
 };
 

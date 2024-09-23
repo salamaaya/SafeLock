@@ -6,9 +6,9 @@ const HomePage = () => {
   return (
     <Flex width={"100vw"} height={"100vh"} justifyContent={"center"}>
         <Center>
-            <VStack m={20}>
+            <VStack m={0}>
                 <Heading>
-                    <img src="SafeLock-logo.png" alt="SafeLock"></img>
+                    <Image src="SafeLock-logo.png" alt="SafeLock"></Image>
                 </Heading>
 
                 <HStack spacing={8}>

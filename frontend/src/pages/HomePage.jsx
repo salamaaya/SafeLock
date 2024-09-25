@@ -9,16 +9,12 @@ const HomePage = () => {
         <Center>
             <VStack m={20}>
                 <Heading>
-                    Safe
+                    <img src="SafeLock-logo.png" alt="SafeLock"></img>
                 </Heading>
 
-                <Heading>
-                     Lock
-                </Heading>
+                <FormButton text={'signup'} form={'signup'}/>
 
-                    <FormButton text={'signup'} form={'signup'}/>
-
-                    <FormButton text={'signin'} form={'signin'}/>
+                <FormButton text={'signin'} form={'signin'}/>
 
                 <Box justifyContent={"center"}>
                     <Text maxW={"30vw"} 

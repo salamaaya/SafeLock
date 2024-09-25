@@ -8,7 +8,8 @@ import {
   Box,
   HStack,
 } from "@chakra-ui/react";
-import FormButton from "../components/FormButton";
+import FormSignin from "../components/FormSignin";
+import FormSignup from "../components/FormSignup";
 
 const HomePage = () => {
   return (
@@ -21,8 +22,8 @@ const HomePage = () => {
           </Heading>
 
           <HStack spacing={4}>
-            <FormButton text={"sign up"} form={"signup"} />
-            <FormButton text={"sign in"} form={"signin"} />
+            <FormSignup text={"sign up"}/>
+            <FormSignin text={"sign in"}/>
           </HStack>
 
           <Box justifyContent={"center"}>

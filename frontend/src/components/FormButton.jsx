@@ -17,7 +17,7 @@ const FormButton = ( {text}, {form}) => {
         _hover={{bg:'#365E32'}}
         fontSize={'xl'}
         w={'10vw'}
-        padding={'20px'}>
+        px={'20'}>
           {text}
       </Button>
 

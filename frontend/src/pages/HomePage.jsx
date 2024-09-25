@@ -22,12 +22,13 @@ const HomePage = () => {
           </Heading>
 
           <HStack spacing={4}>
-            <FormSignup text={"sign up"}/>
-            <FormSignin text={"sign in"}/>
+            <VStack><FormSignup text={"sign up"}/></VStack>
+            <VStack><FormSignin text={"sign in"}/></VStack>
           </HStack>
 
           <Box justifyContent={"center"}>
             <Text
+            id='text-intro'
               maxW={"30vw"}
               fontSize={"l"}
               color={"#AE4F4D"}

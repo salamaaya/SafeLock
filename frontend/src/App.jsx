@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <Box bg={'#E0CFB6'} minH={'100%'} fontFamily={'inter'}>
+      <Box bg={'#E0CFB6'} minH={'viewport'} minW={'viewport'} fontFamily={'inter'}>
         <Routes>
           <Route path="/" element={ <HomePage /> } />
         </Routes>

@@ -1,5 +1,5 @@
 import {useState, React} from 'react'
-import { Button, useDisclosure, Collapse, Box, FormLabel, Input } from '@chakra-ui/react';
+import { Button, useDisclosure, Collapse, Box, FormLabel, Input, Hide } from '@chakra-ui/react';
 import PasswordInput from './PasswordInput';
 
 const FormSignup = ( {text}, {form} ) => {
